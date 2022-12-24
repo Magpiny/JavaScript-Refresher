@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" manifest="index.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Refresher</title>
+</head>
+<body>
+<!-- 
+    This html file is purely used to run javascript codes file on the browser 
+    But typycally, a page has three sections: header, body and footer
+    So, let's define them using header, main and footer 
+-->
+<!-- Header section: Place the navbar and wotavyu -->
+<header>
+    <nav role="navigation">
+        <h2>Magpiny's JS Refresher</h2>
+        <ul>
+            <li>About</li>
+            <li> 
+                <select name="projects" id="projects">
+                    <option value="project" disabled selected>Projects</option>
+                    <optgroup label="Select A Project">
+                        <option value="batlle">
+                            <a href="#battle">Batle Ship</a>
+                        </option>
+                        <option value="">Programming Language</option>
+                        <option value="">Pixel Art Editor</option>
+                        <option value="">A Platform Game</option>
+                        <option value="">Skill Sharing Website</option>
+                    </optgroup>
+                </select>
+                
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- Main content of the page are placed here -->
+<main>
+    <article>
+        <h3>Hello world is hell world</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Ipsam soluta rem, officiis nulla deserunt sit perferendis 
+            temporibus ex ea iusto dicta magni rerum ut repudiandae 
+            libero asperiores eveniet praesentium ipsa!
+        </p>
+        <p>
+            <h3>Games</h3>
+            <ol>
+                <li>
+                    <a href="./battleship.html" target="_blank">Battle Ship</a>
+                </li>
+                <li>
+                    <a href="./numberGuessing.html" target="_blank">Number Guessing Game</a>
+                </li>
+            </ol>
+        </p>
+        <p style="text-align: center; margin-top: 30px;">
+            <img src="./logo2.png" alt="something" height="120" width="120" style="position: relative">
+        </p>
+    </article>
+    <aside>
+        <h3>Related Articles</h3>
+        <ul>
+            <li>Christmas</li>
+            <li>Staycation</li>
+            <li>Growing wise</li>
+        </ul>
+    </aside>
+</main>
+
+<!-- Footer section of the page: copyrights, year info 
+    and more about the business can be placed here
+-->
+
+<footer>
+    <h3>&copy;2022 by Magpiny</h3>
+</footer>
+<!-- Javascript files -->
+<!-- NOTE! -> Any variable defined in any file will be globally available
+    to the rest of js files
+    e.g let print = console.log; defined in array.js file  
+    print variable is globally available to the rest of the files hence no
+    need to redefine it but just use it as if it were defined in the file we're working with
+    So don't fret about print. You're at liberty to use console.log() no harm
+-->
+<script src="./arrays.js"></script>
+<script src="./conditionals.js"></script>
+<script src="./functions.js"></script>
+<script src="./intro.js"></script>
+<script src="./loops.js"></script>
+<script src="./modules.js"></script>
+<script src="./oop.js"></script>
+<script src="./promises.js"></script>
+<script src="./recursion.js"></script>
+<script src="./regex.js"></script>
+<script src="./strings.js"></script>
+<script src="./types.js"></script>
+<script src="./variables.js"></script>
+<script src="./DOM.js"></script>
+<script src="./debugging.js"></script>
+</body>
+</html>
