@@ -59,3 +59,46 @@ window.addEventListener("keyup", (event) => {
     document.body.style.background = "";
   }
 });
+
+window.addEventListener("click", (event) => {
+  let dot = document.createElement("div");
+  dot.className = "dot";
+  dot.style.left = event.pageX - 4 + "px";
+  dot.style.top = event.pageY - 4 + "px";
+  document.body.appendChild(dot);
+});
+
+// window.addEventListener("keydown", (event) => {
+//   alert(`${event.key} pressed and target was ${event.target}`);
+// });
+
+// Web Worker API
+/* let worker = new Worker()
+For cases where you really do want to do some time-consuming thing in the
+background without freezing the page, browsers provide something called web
+workers. A worker is a JavaScript process that runs alongside the main script,
+on its own timeline
+
+workers do not share their global scope or any other data with the main script’s
+environment. Instead, you have to communicate with them by sending messages back and forth.
+*/
+let squareworker = new Worker("./worker.js");
+squareworker.addEventListener("message", (event) => {
+  print(`The worker responded with ${event.data}`);
+});
+squareworker.postMessage(10); //-> The worker responded with 100
+/*Only values that can be represented as JSON can be sent as messages—the other
+  side will receive a copy of them, rather than the value itself.
+  */
+squareworker.postMessage(12); //-> The worker responded with 144
+
+/* SUMMARY
+
+Pressing a key fires "keydown" and "keyup" events. Pressing a mouse button
+fires "mousedown", "mouseup", and "click" events. Moving the mouse fires
+"mousemove" events. Touchscreen interaction will result in "touchstart", "
+touchmove", and "touchend" events.
+Scrolling can be detected with the "scroll" event, and focus changes can
+be detected with the "focus" and "blur" events. When the document finishes
+loading, a "load" event fires on the window.
+*/

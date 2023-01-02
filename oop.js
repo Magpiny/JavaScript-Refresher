@@ -75,7 +75,7 @@ console.log(person["favourite programming language"]);
 
 // OBJECT :: methods
 //export default $Math;
-const $Math = {
+export const $Math = {
   PI: Math.PI.toPrecision(4),
   sum: function (...numbers) {
     let total = 0;

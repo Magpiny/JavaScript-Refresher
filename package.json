@@ -1,0 +1,15 @@
+{
+  "name": "jsrefresher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "DOM.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Samuel Wanjare",
+  "license": "ISC"
+}
