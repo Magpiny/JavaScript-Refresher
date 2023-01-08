@@ -76,3 +76,8 @@ multi-paradigm:the language does not enforce any particular
 */
 
 // With that said, open your editor and let's rock and roll -->Variables?
+
+//Testing: Let's set our dynamic footer year
+let footerYearElement = document.querySelector("span#year");
+let year = new Date().getFullYear();
+footerYearElement.textContent = year;

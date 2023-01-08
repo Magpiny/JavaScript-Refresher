@@ -27,8 +27,8 @@
                             <a href="#battle">Batle Ship</a>
                         </option>
                         <option value="">Programming Language</option>
-                        <option value="">Pixel Art Editor</option>
-                        <option value="">A Platform Game</option>
+                        <option value="pixel"><a href="./projects/PixelArtEditor/pixel.html" target="_blank">Pixel Art Editor</a></option>
+                        <option value=""><a href="" target="_blank" rel="noopener noreferrer">A Platform Game</a></option>
                         <option value="">Skill Sharing Website</option>
                     </optgroup>
                 </select>
@@ -56,11 +56,42 @@
                 <li>
                     <a href="./numberGuessing.html" target="_blank">Number Guessing Game</a>
                 </li>
+                <li>
+                    <a href="/projects/PixelArtEditor/pixel.html" target="_blank" rel="noopener noreferrer">PixelArtEditor</a>
+                </li>
             </ol>
         </p>
         <p style="text-align: center; margin-top: 30px;">
             <img src="./logo2.png" alt="something" height="120" width="120" style="position: relative">
         </p>
+
+        <hr>
+<!--Form -->
+        <h2>Forms</h2>
+
+        <label>
+            <input type="radio" name="color" value="orange"> Orange
+        </label>
+        <label>
+            <input type="radio" name="color" value="lightgreen"> Green
+        </label>
+        <label>
+            <input type="radio" name="color" value="lightblue"> Blue
+        </label>
+        <hr>
+        <select multiple>
+            <option value="1">0001</option>
+            <option value="2">0010</option>
+            <option value="4">0100</option>
+            <option value="8">1000</option>
+        </select>
+        =<span id="output">0</span>
+        <hr>
+        
+        <input type="file" id="file"><br>
+
+        <input type="file" id="file2" multiple>
+
     </article>
     <aside>
         <h3>Related Articles</h3>
@@ -70,8 +101,7 @@
             <li>Growing wise</li>
         </ul>
     </aside>
-
-    <div id="progress">he</div>
+    
 </main>
 
 <!-- Footer section of the page: copyrights, year info 
@@ -79,7 +109,7 @@
 -->
 
 <footer>
-    <h3>&copy;2022 by Magpiny</h3>
+    <h3>&copy; <span id="year">2023</span> by Magpiny</h3>
 </footer>
 <!-- Javascript files -->
 <!-- NOTE! -> Any variable defined in any file will be globally available
@@ -91,6 +121,7 @@
 -->
 <script src="./arrays.js"></script>
 <script src="./conditionals.js"></script>
+<script src="./form.js"></script>
 <script src="./functions.js"></script>
 <script src="./intro.js"></script>
 <script src="./loops.js"></script>

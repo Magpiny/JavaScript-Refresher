@@ -1,0 +1,33 @@
+.container{
+    margin: auto 15%;
+    background-color: beige;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(252, 252, 205);
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    position: sticky;
+}
+header>h1{
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    bottom: 1rem;
+    padding: 2% 2%;
+    font-size: x-large;
+    border-radius: 1.2rem;
+    background-color: rgb(252, 252, 205);
+    position: absolute;
+}

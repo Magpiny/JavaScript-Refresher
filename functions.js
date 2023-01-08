@@ -50,7 +50,7 @@ console.log(say() + " Hello from console.log variable"); //-> Hello from console
 /*
  */
 // Average function
-let average = ([...averages]) => {
+const average = ([...averages]) => {
   return averages.reduce((a, b) => a + b) / averages.length;
   // The reduce method on the array is an higher order function
 };
@@ -82,11 +82,9 @@ It takes two arguments: a string containing a
 comma-separated list of argument names and a string containing the 
 function body.
 */
-
-let greetingsPro = Function("who", "return `Hello ${who}`");
+const greetingsPro = Function("who", "return `Hello ${who}`");
 console.log(greetingsPro("John"));
-
 //-> Hello John
-/** The END >< follow @SamuelWanjare for more of this content */
 
-module.exports = [average, greetingsPro];
+//module.exports = average;
+/** The END >< follow @SamuelWanjare for more of this content */

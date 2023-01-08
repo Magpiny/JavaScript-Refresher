@@ -75,7 +75,7 @@ console.log(person["favourite programming language"]);
 
 // OBJECT :: methods
 //export default $Math;
-export const $Math = {
+const $Math = {
   PI: Math.PI.toPrecision(4),
   sum: function (...numbers) {
     let total = 0;
@@ -411,3 +411,40 @@ print(String(blackRabbit)); // → a black rabbit
 
 // ==> SYMBOLS
 // Have litle use(Not wildly used but have important use cases) so i'll not cover
+
+/* this
+call(), apply() and bind() methods
+
+*/
+const person6 = {
+  name1: "Jacob",
+  age1: 88,
+};
+
+function info() {
+  print(`${this.name1} is ${this.age1}yrs old.`);
+}
+
+info.call(person6); //->Jacob is 88yrs old.
+
+/*
+The difference btwn call and apply methods is how we add additional arguments
+With call() we add them normally ie info.call(person6, "ManU", "Mursik")
+With apply() we put them inside an array-> info.apply(person6, ["ManU", "Mursik"])
+call() and apply() methods are used for single call
+i.e ->->->
+*/
+function info1(meal, team) {
+  print(
+    `${this.name1} is ${this.age1}yrs old and likes ${meal} his favourite club is ${team}`
+  );
+}
+
+info1.call(person6, "Mursik", "ManU"); //-> Jacob is 88yrs old and likes Mursik his favourite club is ManU
+info1.apply(person6, ["Mursik", "ManU"]); //-> Jacob is 88yrs old and likes Mursik his favourite club is ManU
+
+//Bind : Does permanent change and can be referenced over and over again
+let personInfo = info1.bind(person6, "Omena", "Arsenal");
+personInfo();
+
+// END: --> JS Fluency
