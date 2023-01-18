@@ -7,3 +7,5 @@ test("Expecting a Number", () => {
 test("Expecting a String", () => {
   expect(greetingsPro("John")).toBe("Hello John");
 });
+
+// Running tests : npm run test

@@ -8,7 +8,7 @@ let noteStorage = JSON.parse(localStorage.getItem("notes")) || [];
 
 // Add data to localStorage
 function storeData() {
-  if ((noteTitle === "") | (notes === "")) {
+  if ((noteTitle == "") | (notes == "")) {
     let p = document.createElement("p");
     p.style.color = "red";
     p.style.fontSize = "medium";
@@ -38,11 +38,13 @@ function storeData() {
   return noteStorage;
 }
 
+// Clear fields after sub,itting the form
 function clearFields() {
   document.querySelector("input#noteTitle").value = "";
   document.querySelector("textarea#notes").value = "";
 }
 
+// Submit form data for storage
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   storeData();
@@ -54,8 +56,6 @@ function counter() {
   count.textContent = noteStorage.length;
   return count.textContent;
 }
-
-counter();
 
 //
 function notesCounterInfo() {
@@ -76,12 +76,6 @@ clearButton.style.marginBottom = "2rem";
 
 content.addEventListener("change", notesCounterInfo);
 
-if (noteStorage.length > 0) {
-  notesCounterInfo();
-} else {
-  content.remove();
-}
-
 //clear all notes
 clearButton.addEventListener("click", () => {
   localStorage.clear();
@@ -89,7 +83,7 @@ clearButton.addEventListener("click", () => {
 
 content.append(clearButton);
 
-// Item delete mssg
+// Item delete mssg: Notification
 function deleteMssg(item) {
   let p = document.querySelector("div#mssg");
 
@@ -103,43 +97,49 @@ function deleteMssg(item) {
   setTimeout(() => clearButton.removeAttribute("hidden"), 3000);
 }
 
-//Load content
-noteStorage.map((notes, index) => {
-  let card = document.createElement("article");
-  let heading = document.createElement("h2");
-  let para = document.createElement("p");
-  let button = document.createElement("button");
+//Load content to UI
+if (noteStorage.length > 0) {
+  notesCounterInfo();
 
-  card.setAttribute("key", `${index}`);
-  heading.textContent = `${index + 1}: ${notes.title}`;
-  para.textContent = notes.notes;
-  button.innerText = "delete";
+  noteStorage.map((notes, index) => {
+    let card = document.createElement("article");
+    let heading = document.createElement("h2");
+    let para = document.createElement("p");
+    let button = document.createElement("button");
 
-  //Styles
-  card.style.backgroundColor = "black";
-  card.style.marginTop = "2rem";
-  button.style.color = "white";
-  button.style.backgroundColor = "red";
-  //button.style.float = "right";
-  button.style.marginBottom = "1.2rem";
+    card.setAttribute("key", `${index}`);
+    heading.textContent = `${index + 1}: ${notes.title}`;
+    para.textContent = notes.notes;
+    button.innerText = "delete";
 
-  //clear an item
-  button.addEventListener("click", () => {
-    let myitem = noteStorage[index].title;
-    console.log(typeof myitem);
-    noteStorage.splice(index, 1);
+    //Styles
+    card.style.backgroundColor = "black";
+    card.style.marginTop = "2rem";
+    button.style.color = "white";
+    button.style.backgroundColor = "red";
+    //button.style.float = "right";
+    button.style.marginBottom = "1.2rem";
 
-    localStorage.setItem("notes", JSON.stringify(noteStorage));
+    //clear an item
+    button.addEventListener("click", () => {
+      let myitem = noteStorage[index].title;
+      console.log(typeof myitem);
+      noteStorage.splice(index, 1);
 
-    // ALert user
-    deleteMssg(myitem);
-    console.log(deleteMssg(myitem));
-    card.remove();
+      localStorage.setItem("notes", JSON.stringify(noteStorage));
+
+      // ALert user
+      deleteMssg(myitem);
+      console.log(deleteMssg(myitem));
+      card.remove();
+    });
+
+    card.append(heading, para, button);
+    content.append(card);
   });
-
-  card.append(heading, para, button);
-  content.append(card);
-});
+} else {
+  content.remove();
+}
 
 /*
 Forgive my helterskelter code, I was not prepaired to do this but I found

@@ -134,3 +134,5 @@ canvScaling.beginPath();
 canvScaling.arc(100, 100, 90, 0, 8);
 canvScaling.lineWidth = 3;
 canvScaling.stroke();
+
+// --> Honestly? I don't enjoy drawing or gaming coding

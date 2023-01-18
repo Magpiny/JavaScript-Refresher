@@ -1,0 +1,71 @@
+{
+    "testdata":[
+        {
+            "id":1,
+            "question": "What does HTML stand for?",
+            "answer":"Hypertext Markup Language",
+            "choices":[
+                "Home Made Lemon",
+                "Hypertext Markup Language",
+                "Hyperurl Markup Lens",
+                "Harper Manner Lown"
+            ]
+        },
+        {
+            "id":2,
+            "question": "What is the capital city of the United Kingdom?",
+            "answer":"London",
+            "choices":[
+                "Liverpool",
+                "London",
+                "Machester",
+                "Dublin"
+            ]
+        },
+        {
+            "id":3,
+            "question": "What is the capital city of United States of America?",
+            "answer":"Washington DC",
+            "choices":[
+                "Washington DC",
+                "New York",
+                "Las Vegas",
+                "Carlifonia"
+            ]
+        },
+        {
+            "id":4,
+            "question": "What is the capital city of South Africa?",
+            "answer":"Johannesburg",
+            "choices":[
+                "Cape Town",
+                "Johannesburg",
+                "Pretoria",
+                "Limpopo"
+            ]
+        },
+        {
+            "id":5,
+            "question": "What is the capital city of Kenya?",
+            "answer":"Nairobi",
+            "choices":[
+                "Nakuru",
+                "Mombasa",
+                "Kisumu",
+                "Nairobi"
+            ]
+        },
+        {
+            "id":6,
+            "question": "What is the capital city of Ghana?",
+            "answer":"Accra",
+            "choices":[
+                "Free State",
+                "Lesotho",
+                "Accra",
+                "Kumasi"
+            ]
+        }
+    ]
+    
+}

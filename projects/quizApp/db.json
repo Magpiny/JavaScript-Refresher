@@ -1,0 +1,137 @@
+{
+    "person":[
+        {
+            "name":"John",
+            "age":34,
+            "job":"Lawyer"
+        
+        
+        },
+        {
+            "name":"Sam",
+            "age":24,
+            "job":"Student"
+        
+        },
+        {
+            "name":"Jane",
+            "age":24,
+            "job":"Artist"
+        
+        },
+        {
+            "name":"Hamsa",
+            "age":44,
+            "job":"Professor"
+        
+        },
+        {
+            "name":"Japheth",
+            "age":34,
+            "job":"Doctor"
+        
+        },
+       {
+         "name":"Shadrack",
+            "age":28,
+            "job":"Software Engineer"
+        
+       },
+       {
+         "name":"Meshack",
+            "age":29,
+            "job":"Journalist"
+        
+       },
+       {
+         "name":"Jack",
+            "age":26,
+            "job":"Teacher"
+        
+       }
+    ],
+    "cars":[
+        {
+            "make":"Mercedes",
+            "price":1200000,
+            "mileage":234567,
+            "color":"white"
+        },
+        {
+            "make":"Ford",
+            "price":1200000,
+            "mileage":234567,
+            "color":"charcoal grey"
+        },
+        {
+            "make":"Chevrolet",
+            "price":1200000,
+            "mileage":234567,
+            "color":"Red"
+        },
+        {
+            "make":"Mazda",
+            "price":1200000,
+            "mileage":234567,
+            "color":"blue"
+        },
+        {
+            "make":"Audi",
+            "price":1200000,
+            "mileage":234567,
+            "color":"white"
+        },
+        {
+            "make":"BMW",
+            "price":1200000,
+            "mileage":234567,
+            "color":"black"
+        }
+    ],
+    "computer":[
+        {
+            "id":1,
+            "question": "What does HTML stand for?",
+            "answer":"Hypertext Markup Language",
+            "choices":[
+                "Home Made Lemon",
+                "Hypertext Markup Language",
+                "Hyperurl Markup Lens",
+                "Harper Manner Lown"
+            ]
+        },
+        {
+            "id":2,
+            "question": "What does HTML stand for?",
+            "answer":"Hypertext Markup Language",
+            "choices":[
+                "Home Made Lemon",
+                "Hypertext Markup Language",
+                "Hyperurl Markup Lens",
+                "Harper Manner Lown"
+            ]
+        },
+        {
+            "id":3,
+            "question": "What does HTML stand for?",
+            "answer":"Hypertext Markup Language",
+            "choices":[
+                "Home Made Lemon",
+                "Hypertext Markup Language",
+                "Hyperurl Markup Lens",
+                "Harper Manner Lown"
+            ]
+        },
+        {
+            "id":4,
+            "question": "What does HTML stand for?",
+            "answer":"Hypertext Markup Language",
+            "choices":[
+                "Home Made Lemon",
+                "Hypertext Markup Language",
+                "Hyperurl Markup Lens",
+                "Harper Manner Lown"
+            ]
+        }     
+    ]
+}
