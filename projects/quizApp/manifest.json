@@ -1,0 +1,26 @@
+{
+    "id":"/projects/quizApp/q.html",
+    "name":"QuizApp",
+    "short_name":"QuizApp",
+    "description":"The App contains questions and choices and gives you your score afterwards",
+    "dir":"ltr",
+    "lang":"en",
+    "orientation":"portrait",
+    "icons":[{
+        "src":"./images/magIcon512.png",
+        "type":"image/png",
+        "sizes":"512x512",
+        "purpose":"any"
+    },{
+        "src":"./images/magIcon192.png",
+        "type":"image/png",
+        "sizes":"192x192",
+        "purpose":"maskable"
+    }],
+    "apple_touch_icon":"./images/magIcon192.png",
+    "display":"standalone",
+    "scope":"http://127.0.0.1:5500/projects/quizApp/",
+    "background_color":"#825be7",
+    "theme_color":"#5218c6",
+    "start_url":"http://127.0.0.1:5500/projects/quizApp/q.html"
+}

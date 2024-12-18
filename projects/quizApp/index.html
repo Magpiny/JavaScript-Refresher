@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5218c6">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+    <meta name="description" content="A PWA Vanilla Javascript QuizApp">
+    <title>QuizApp</title>
+    <link rel="apple-touch-icon" href="./images/magIcon192.png" type="image/png">
+    <link rel="shortcut icon" href="./images/magIcon192.png" type="image/png">
+    <link rel="stylesheet" href="q.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <div class="container">
+        <header>QUIZ APP: &nbsp;&nbsp;<em></em></header>
+
+        <main>
+            <button class="start-button">Start Quiz</button>
+            <div class="quiz-rules">
+                <h1 class="rules-heading">Terms and Conditions</h1>
+                <hr>
+                <div class="rules">
+                    <ol>
+                        <li>You will have only <span>15 seconds</span> per each question</li>
+                        <li>Once you select your answer it cannot be undone</li>
+                        <li>You cannot select any option once the timer goes off</li>
+                        <li>You cannot exit from the quiz while playing</li>
+                        <li>You will get points on the basis of correct answers</li>
+                        
+                    </ol>
+                    <b>I wish you all the best and good luck in your adventure</b>
+                </div>
+                <div class="btns">
+                    <button class="exit">Exit</button>
+                    <button class="proceed">Continue</button>
+                </div>
+            </div>
+
+            <!-- Quizes section  -->
+            <div class="quizes">
+               <header>
+                    <h2>Quiz App</h2>
+                    <div class="timer">
+                        <div class="time-left">
+                            Time Left: &nbsp;<b>15</b>
+                        </div>
+                        <div class="total-time"></div>
+                    </div>
+                    <div class="timeline"></div>
+               </header>
+               
+               <section>
+                    <div class="question">
+                        <!-- questions will be injected by js -->
+                    </div>
+                    <div class="choices">
+                        <!-- Ansers will be injected by JavaScript -->
+                    </div>
+                </section>
+
+
+               <footer>
+                <div class="quiz-count">
+                    <!-- Questions count will be injected by JS -->
+                1/3
+                </div>
+                <button class="next-quiz">Next</button>
+               </footer>
+            </div>
+
+            <!-- Results -->
+            <div class="results">
+                <div class="icon">&caps;</div>
+                <div class="congrat-mssg">Quiz completed!</div>
+                <div class="scores">
+                    <!-- Finall Score: Injected by Javascript -->
+                </div>
+                <div class="btns">
+                    <button class="quit">Exit</button>
+                    <button class="restart">Replay</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>Made by Magpiny&trade; &copy;<b><!--Year--> ></b></footer>
+    </div>
+   
+    <script src="./q.js"></script>
+</body>
+</html>
